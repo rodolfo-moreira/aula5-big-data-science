@@ -51,6 +51,54 @@ sse <- sum((p-teste$mpg)^2)
 
 d <- read.csv("train.csv")
 
+# Probabilidade de sobrevivência do Titanic
+
+nrow(d[d$Survived==1,])/891
+
+
+#Utilizando sql no R
+install.packages("sqldf")
+library(sqldf)
+
+
+sqldf("select Survived,count(*) from d group by Survived")
+
+
+table(d$Survived)
+
+prop.table(table(d$Survived))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

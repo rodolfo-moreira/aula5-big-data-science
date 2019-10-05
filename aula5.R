@@ -47,7 +47,9 @@ cbind(p, teste$mpg, p-teste$mpg)
 sse <- sum((p-teste$mpg)^2)
 
 
+## CLASSIFICADORES
 
+d <- read.csv("train.csv")
 
 
 
